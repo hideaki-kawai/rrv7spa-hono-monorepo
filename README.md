@@ -208,10 +208,4 @@ GitHub Actionsによる自動テストが設定されています。
 - [Turborepo ドキュメント](https://turbo.build/)
 - [pnpm ドキュメント](https://pnpm.io/)
 
-## 🤝 貢献
-
-プルリクエストや課題の報告を歓迎します！
-
-## 📄 ライセンス
-
 ISC
