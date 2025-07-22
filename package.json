@@ -25,7 +25,7 @@
   "author": "hideaki.kawai",
   "license": "ISC",
   "devDependencies": {
-    "turbo": "^2.4.2",
+    "turbo": "^2.4.4",
     "@types/node": "^24.0.0",
     "typescript": "^5.0.0"
   },
