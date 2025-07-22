@@ -1,0 +1,36 @@
+{
+  "name": "rrv7-spa-hono-monorepo",
+  "version": "1.0.0",
+  "description": "rrv7(spa)とhonoのモノレポテンプレート",
+  "packageManager": "pnpm@9.7.0",
+  "engines": {
+    "node": ">=23.9.0",
+    "pnpm": ">=9.7.0"
+  },
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "typecheck": "turbo typecheck",
+    "lint": "turbo lint",
+    "dev:api": "pnpm --filter @rrv7-spa-hono-monorepo/api dev",
+    "dev:admin": "pnpm --filter @rrv7-spa-hono-monorepo/admin dev",
+    "build:api": "pnpm --filter @rrv7-spa-hono-monorepo/api build",
+    "build:admin": "pnpm --filter @rrv7-spa-hono-monorepo/admin build",
+    "start:api": "pnpm --filter @rrv7-spa-hono-monorepo/api start",
+    "preview:api": "pnpm --filter @rrv7-spa-hono-monorepo/api preview",
+    "preview:admin": "pnpm --filter @rrv7-spa-hono-monorepo/admin preview",
+    "typecheck:api": "pnpm --filter @rrv7-spa-hono-monorepo/api typecheck",
+    "typecheck:admin": "pnpm --filter @rrv7-spa-hono-monorepo/admin typecheck"
+  },
+  "author": "hideaki.kawai",
+  "license": "ISC",
+  "devDependencies": {
+    "turbo": "^2.4.2",
+    "@types/node": "^24.0.0",
+    "typescript": "^5.0.0"
+  },
+  "volta": {
+    "node": "23.9.0",
+    "npm": "10.9.2"
+  }
+}
