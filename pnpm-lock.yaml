@@ -29,9 +29,9 @@ importers:
       '@rrv7-spa-hono-monorepo/api':
         specifier: workspace:^
         version: link:../api
-      hono:
-        specifier: ^4.8.5
-        version: 4.8.5
+      '@rrv7-spa-hono-monorepo/api-client':
+        specifier: workspace:^
+        version: link:../../packages/api-client
       isbot:
         specifier: ^5.1.27
         version: 5.1.28
@@ -100,6 +100,19 @@ importers:
       vite:
         specifier: ^6.3.5
         version: 6.3.5(@types/node@24.0.15)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3)
+
+  packages/api-client:
+    dependencies:
+      hono:
+        specifier: ^4.8.5
+        version: 4.8.5
+    devDependencies:
+      '@rrv7-spa-hono-monorepo/api':
+        specifier: workspace:^
+        version: link:../../apps/api
+      typescript:
+        specifier: ^5.8.3
+        version: 5.8.3
 
 packages:
 

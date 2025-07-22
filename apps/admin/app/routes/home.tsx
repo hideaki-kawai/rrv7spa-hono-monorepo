@@ -1,6 +1,6 @@
 import type { Route } from "./+types/home";
 import { useLoaderData } from "react-router";
-import { client } from "../lib/api-client";
+import { client } from "@rrv7-spa-hono-monorepo/api-client";
 
 export function meta({}: Route.MetaArgs) {
   return [
