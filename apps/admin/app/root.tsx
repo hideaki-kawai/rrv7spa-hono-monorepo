@@ -9,7 +9,7 @@ import {
 
 import type { Route } from "./+types/root";
 import "./app.css";
-import { authMiddleware } from "~/middleware/auth";
+import { authMiddleware } from "./middleware/auth";
 
 export const unstable_clientMiddleware = [authMiddleware];
 
@@ -46,20 +46,6 @@ export function Layout({ children }: { children: React.ReactNode }) {
 
 export default function App() {
   return <Outlet />;
-}
-
-export function HydrateFallback() {
-  return (
-    <div style={{ 
-      display: 'flex', 
-      alignItems: 'center', 
-      justifyContent: 'center', 
-      height: '100vh',
-      fontFamily: 'system-ui, sans-serif'
-    }}>
-      <p>Loading...</p>
-    </div>
-  );
 }
 
 export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
