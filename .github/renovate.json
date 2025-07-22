@@ -1,42 +1,65 @@
 {
   "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "config:base",
+    "config:recommended",
     ":dependencyDashboard",
     ":automergePatch",
     ":automergePr"
   ],
   "timezone": "Asia/Tokyo",
-  "schedule": ["after 10pm and before 5am on every weekday", "every weekend"],
-  "labels": ["dependencies"],
+  "schedule": [
+    "after 10pm every weekday",
+    "every weekend",
+    "before 5am every weekday"
+  ],
+  "labels": [
+    "dependencies"
+  ],
   "packageRules": [
     {
       "description": "Automerge non-major updates",
-      "matchUpdateTypes": ["minor", "patch"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch"
+      ],
       "automerge": true
     },
     {
       "description": "Group React and React Router updates",
-      "matchPackagePatterns": ["^react", "^@react-router"],
-      "groupName": "React and React Router"
+      "groupName": "React and React Router",
+      "matchPackageNames": [
+        "/^react/",
+        "/^@react-router/"
+      ]
     },
     {
       "description": "Group Vite related updates",
-      "matchPackagePatterns": ["^vite", "^@vitejs"],
-      "groupName": "Vite"
+      "groupName": "Vite",
+      "matchPackageNames": [
+        "/^vite/",
+        "/^@vitejs/"
+      ]
     },
     {
       "description": "Group Hono related updates",
-      "matchPackagePatterns": ["^hono", "^@hono"],
-      "groupName": "Hono"
+      "groupName": "Hono",
+      "matchPackageNames": [
+        "/^hono/",
+        "/^@hono/"
+      ]
     },
     {
       "description": "Group TypeScript related updates",
-      "matchPackageNames": ["typescript", "@types/node"],
+      "matchPackageNames": [
+        "typescript",
+        "@types/node"
+      ],
       "groupName": "TypeScript"
     }
   ],
   "prConcurrentLimit": 3,
   "rangeStrategy": "bump",
-  "postUpdateOptions": ["pnpmDedupe"]
+  "postUpdateOptions": [
+    "pnpmDedupe"
+  ]
 }
