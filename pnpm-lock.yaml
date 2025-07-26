@@ -9,13 +9,13 @@ importers:
   .:
     devDependencies:
       '@types/node':
-        specifier: ^24.0.0
+        specifier: ^24.0.15
         version: 24.0.15
       turbo:
         specifier: ^2.5.5
         version: 2.5.5
       typescript:
-        specifier: ^5.0.0
+        specifier: ^5.0.4
         version: 5.8.3
 
   apps/admin:
@@ -52,7 +52,7 @@ importers:
         specifier: ^4.1.11
         version: 4.1.11(vite@6.3.5(@types/node@24.0.15)(jiti@2.4.2)(lightningcss@1.30.1)(tsx@4.20.3))
       '@types/node':
-        specifier: ^24.0.0
+        specifier: ^24.0.15
         version: 24.0.15
       '@types/react':
         specifier: ^19.1.8
@@ -92,7 +92,7 @@ importers:
         specifier: ^0.20.0
         version: 0.20.0(hono@4.8.5)
       '@types/node':
-        specifier: ^24.0.0
+        specifier: ^24.0.15
         version: 24.0.15
       tsx:
         specifier: ^4.20.3
