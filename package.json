@@ -2,10 +2,10 @@
   "name": "rrv7-spa-hono-monorepo",
   "version": "1.0.0",
   "description": "rrv7(spa)とhonoのモノレポテンプレート",
-  "packageManager": "pnpm@9.7.0",
+  "packageManager": "pnpm@9.15.9",
   "engines": {
     "node": ">=23.11.1",
-    "pnpm": ">=9.7.0"
+    "pnpm": ">=9.15.9"
   },
   "scripts": {
     "build": "turbo build",
