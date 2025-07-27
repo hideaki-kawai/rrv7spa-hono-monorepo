@@ -4,7 +4,7 @@
   "description": "rrv7(spa)とhonoのモノレポテンプレート",
   "packageManager": "pnpm@9.7.0",
   "engines": {
-    "node": ">=23.9.0",
+    "node": ">=23.11.1",
     "pnpm": ">=9.7.0"
   },
   "scripts": {
@@ -30,7 +30,7 @@
     "typescript": "^5.8.3"
   },
   "volta": {
-    "node": "23.9.0",
+    "node": "23.11.1",
     "npm": "10.9.3"
   }
 }
